@@ -1,0 +1,7 @@
+# refer to https://wiki.xfce.org/faq#is_it_possible_to_start_xfce_when_i_login_on_the_console
+# for directions on getting xfce4 to startup after or during login
+- name: Install desktop window manager xfce4
+  apt: pkg={{item}} state=present
+  sudo: yes
+  with_items:
+  	- xfce4
